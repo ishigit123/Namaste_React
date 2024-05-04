@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 const RestrauntMenu = () =>{
-    useEffect(()=>{
-        fetchMenu();
-    },[]);
-    const fetchMenu = async()=>{
-        const data = await fetch('https://www.swiggy.com/mapi/homepage/getCards?lat=28.3670355&lng=79.4304381');
-        const json = await data.json();
-        console.log(json);
-    };
+    // useEffect(()=>{
+    //     fetchMenu();
+    // },[]);
+    // const fetchMenu = async()=>{
+    //     const data = await fetch('https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=87215');
+    //     const json = await data.json();
+    //     console.log(json);
+    // };
     return(
         <div className="res-menu"> 
             {console.log("rendered")}
